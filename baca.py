@@ -83,7 +83,7 @@ if uploaded_file is not None:
             st.write("### Hasil Deteksi")
             
             # Tombol Eksekusi
-            if st.button("🔍 Ekstrak Pesan Sekarang", type="primary"):
+            if st.button("🔍 Buka Pesan Sekarang", type="primary"):
                 with st.spinner('Sedang memindai piksel...'):
                     # Proses Decode
                     hidden_message = decode_img(image)
@@ -101,3 +101,4 @@ if uploaded_file is not None:
 
 else:
     st.info("Silakan upload file .PNG untuk memulai.")
+
